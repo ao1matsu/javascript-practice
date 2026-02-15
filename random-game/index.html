@@ -5,9 +5,18 @@
     <title>数字当てゲーム</title>
 </head>
 <body>
+    <div class="container">
     <h1>数字当てゲーム</h1>
-    <button onclick="playGame()">ゲームを始める</button>
+    <p>1~5の数字を入力してください</p>
 
+    <input type="number" id="userInput" min="1" max="5">
+    <button onclick="checkAnswer()">判定する</button>
+
+    <p id="result"></p>
+
+    <button onclick="resetGame()">もう一度挑戦</button>
+
+</div>
     <script src="random-game/script.js"></script>
 </body>
 </html>
