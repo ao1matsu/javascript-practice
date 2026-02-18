@@ -11,6 +11,15 @@ addButton.addEventListener("click",function(){
 
     const li = document.createElement("li");
     li.textContent = taskText;
+
+const deleteButton = document.createElement("buttom");
+deleteButton.textContent ="削除";
+
+deleteButton.addEventListener("click",function () {
+    taskList.removeChild(li);
+});
+
+
     taskList.append(li);
 
     taskInput.Value = "";
