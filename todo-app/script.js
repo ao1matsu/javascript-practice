@@ -12,7 +12,7 @@ addButton.addEventListener("click",function(){
     const li = document.createElement("li");
     li.textContent = taskText;
 
-const deleteButton = document.createElement("buttom");
+const deleteButton = document.createElement("button");
 deleteButton.textContent ="削除";
 
 deleteButton.addEventListener("click",function () {
@@ -20,7 +20,7 @@ deleteButton.addEventListener("click",function () {
 });
 
 
-    taskList.append(li);
+    taskList.appendChild(li);
 
-    taskInput.Value = "";
+    taskInput.value = "";
 });
