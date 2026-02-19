@@ -27,4 +27,11 @@ addButton.addEventListener("click", function () {
     taskList.appendChild(li);
 
     taskInput.value = "";
+
+taskInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        addButton.click();
+    }
+
+    
 });
