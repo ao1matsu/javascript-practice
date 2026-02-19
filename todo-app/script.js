@@ -12,6 +12,10 @@ addButton.addEventListener("click", function () {
     const li = document.createElement("li");
     li.textContent = taskText;
 
+    li.addEventListener("click", function () {
+    li.classList.toggle("completed");
+});
+
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "削除";
 
@@ -21,9 +25,6 @@ addButton.addEventListener("click", function () {
 
     li.appendChild(deleteButton);  // ← これ重要
     taskList.appendChild(li);
-
-    li.addEventListener("click", function () {
-  li.classList.toggle("completed");
 
     taskInput.value = "";
 });
