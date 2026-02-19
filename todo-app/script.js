@@ -22,5 +22,8 @@ addButton.addEventListener("click", function () {
     li.appendChild(deleteButton);  // ← これ重要
     taskList.appendChild(li);
 
+    li.addEventListener("click", function () {
+  li.classList.toggle("completed");
+
     taskInput.value = "";
 });
