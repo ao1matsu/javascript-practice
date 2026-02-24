@@ -17,7 +17,7 @@ addButton.addEventListener("click", function () {
 
 // ===== Enterキー対応 =====
 taskInput.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && !evevt.isComposing) {
         addButton.click();
     }
 });
