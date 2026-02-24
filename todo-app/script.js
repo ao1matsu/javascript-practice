@@ -66,4 +66,9 @@ function saveTasks() {
 
 // ===== 読み込み時に復元 =====
 window.addEventListener("load", function () {
-    const savedTasks = JSON.parse(localStorage.getItem("tasks")) ||
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+    savedTasks.forEach(function (task) {
+        createTask(task.text, task.completed);
+    });
+});
